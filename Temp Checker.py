@@ -2,11 +2,14 @@ temp = 0
 fever = 0
 total = 0
 hour = 1
+
 while hour <= 6:
     temp = input("Enter temperature: ")
+    #checks if temp is correct
     while int(temp) < 30 or int(temp) > 44:
         print("Error. Temperature is out of range.")
         temp = input("Enter temperature: ")
+    #changes fever if temp is over 37
     if int(temp) > 37:
         fever = fever + 1
     total = total + int(temp)

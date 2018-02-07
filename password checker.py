@@ -1,5 +1,7 @@
+#gets password
 password = input('Enter password:')
 attempts = 0
+#checks if password if correct
 if password == "Tues1212":
     print ("Password Accepted")
 if password != "Tues1212":
